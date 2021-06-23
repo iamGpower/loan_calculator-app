@@ -16,6 +16,13 @@
 			crossorigin="anonymous"
 		/>
 
+		<style>
+			#loading,
+			#results {
+				display: none;
+			}
+		</style>
+
 		<title>Loan_Calculator_App</title>
 	</head>
 	<body class="bg-dark">
@@ -48,6 +55,7 @@
 										class="form-control"
 										id="interest"
 										placeholder="Interest"
+										step=".01"
 									/>
 								</div>
 							</div>
@@ -57,6 +65,7 @@
 									class="form-control"
 									id="years"
 									placeholder="Repayment Period (Years)"
+									step=".01"
 								/>
 							</div>
 							<div class="form-group">
@@ -68,12 +77,12 @@
 							</div>
 						</form>
 						<!-- Loader Here -->
-						<!-- <div id="loading">
+						<div id="loading">
 							<img src="./img/loading.gif" alt="" />
-						</div> -->
+						</div>
 						<!-- Results -->
-						<div id="results" class="pt-4">
-							<h5 class="pb-2">Repayment Plan Result</h5>
+						<div id="results" class="pt-3">
+							<h5 class="title pb-2">Repayment Plan</h5>
 
 							<div class="form-group">
 								<div class="input-group">
